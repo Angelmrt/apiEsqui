@@ -4,6 +4,7 @@ import com.azarquiel.s2daw.apiEsqui.model.Estacion;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -16,5 +17,5 @@ import java.util.Set;
 public class ProvinciaDto implements Serializable {
     Short id;
     String nombre;
-    Set<Estacion> estacions;
+    List<Estacion> estacions;
 }

@@ -8,7 +8,9 @@ import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
@@ -39,9 +41,9 @@ public class Estacion {
     private Provincia provincia;
 
     @OneToMany(mappedBy = "estacion")
-    private Set<Comentario> comentarios = new LinkedHashSet<>();
+    private List<Comentario> comentarios = new ArrayList<>();
 
     @OneToMany(mappedBy = "estacion")
-    private Set<Imagen> imagens = new LinkedHashSet<>();
+    private List<Imagen> imagens = new ArrayList<>();
 
 }

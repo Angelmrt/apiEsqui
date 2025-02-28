@@ -5,6 +5,7 @@ import com.azarquiel.s2daw.apiEsqui.model.Imagen;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -20,6 +21,6 @@ public class EstacionDto implements Serializable {
     String logo;
     String plano;
     Short km;
-    Set<Comentario> comentarios;
-    Set<Imagen> imagens;
+    List<Comentario> comentarios;
+    List<Imagen> imagens;
 }

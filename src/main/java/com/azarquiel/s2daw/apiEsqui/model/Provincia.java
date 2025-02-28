@@ -6,7 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,6 +25,6 @@ public class Provincia {
     private String nombre;
 
     @OneToMany(mappedBy = "provincia")
-    private Set<Estacion> estacions = new LinkedHashSet<>();
+    private List<Estacion> estacions = new ArrayList<>();
 
 }
